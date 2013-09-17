@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Deaf Grandma</h1>
+  <div class="grandma">
+    <%= erb :_grandma_says %>
+  </div>
+
+  <form action="/grandma" method="post">
+    Say something to Grandma:
+    <br>
+    <input type="text" name="user_input">     <!--- puts together request and sends to server --> 
+    <input type="submit" value="Say it!">     <!--- needs route so Sinatra knows where to send request --> 
+  </form>
+</div>
+</div>
